@@ -8,13 +8,14 @@ Alejandro Guerrero(2242951) munoz.cesar@correounivalle.edu.co
 
 docker network create pg_network
 
-# Se crea el primer contenedor del cliente 
+# Se crea el primer contenedor del sever
 
 docker run -v D:\DocumentosSD\Semestreactual\NotasSO\entrega3\misscripts:/docker-entrypoint-initdb.d -v D:\DocumentosSD\Semestreactual\NotasSO\entrega3\pg_db:/var/lib/postgresql/data --name pg_server -e POSTGRES_DB=tarea_db -e POSTGRES_USER=yo -e POSTGRES_PASSWORD=empanada --network pg_network postgres:15-bookworm
 
 # Se crea el registro con el "hola mundo" ejecutando el psql en el server 
 
 docker exec -it pg_server psql -U yo tarea_db
+
 INSERT INTO pg_tabla (mensaje) VALUES ('hola mundo');
 
 # se crea el contenedor del cliente 
