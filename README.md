@@ -2,7 +2,7 @@
 Bayron Jojoa (2242917) Bayron.jojoa@correounivalle.edu.co
 
 Alejandro Guerrero(2242951) munoz.cesar@correounivalle.edu.co
-# Linnk Video Youtube :  
+# Linnk Video Youtube :  https://youtu.be/PiVtqNX_3vE
 # las sigientes son las instruciones paso a paso de como se realizo la actividad 
 # primero se crea la red 
 
